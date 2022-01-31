@@ -1,0 +1,16 @@
+class Solution {
+public double findMaxAverage(int[] nums, int k) {
+  const result = [];
+        
+        for (i=0; i<nums.length - K +1; i++){
+            let sum = 0;
+                for (let j = i; j<i+K; j++) {
+                    sum+= arr[j];
+                }
+        }
+        result.push(sum/K);
+    }
+    return result;
+}
+
+const result = findMaxAverage([1, 3, 2, 6, -1, 4, 1, 8, 2],5);

@@ -1,0 +1,16 @@
+class Solution {
+    public int maxProfit(int[] prices) {
+        if (prices == null || prices.length == 0) {  //we don’t want the price to be zero - we won’t pay anything like that.
+            return 0;
+        }
+     int profit = 0;
+        for (int i = 0; i < prices.length; i++) 
+        {
+            if (prices[i+1] > prices[i]) // we check if the price is greater than the other one
+            {
+                profit += prices[i+1]- prices[i]; // if yes, we calculate the profit
+            }
+        }
+        return profit;
+    }
+}
